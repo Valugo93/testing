@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Alejandro Sánchez Balugo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h1>Alejandro Sánchez Balugo</h1>
+                    <p>Desarrollador de Aplicaciones Móviles y Java</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre Mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Educación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <section id="header">
+                    <div class="header-content">
+                        <h1>Alejandro Sánchez Balugo</h1>
+                        <p>Desarrollador de Aplicaciones Móviles y Java</p>
+                    </div>
+                </section>
+
+                <section id="about">
+                    <h2>Sobre Mí</h2>
+                    <p>Soy un desarrollador especializado en aplicaciones móviles y Java. Con experiencia en desarrollo web y aseguramiento de calidad, siempre estoy buscando aprender y mejorar mis habilidades.</p>
+                </section>
+
+                <section id="skills">
+                    <h2>Habilidades</h2>
+                    <h3>Front-End</h3>
+                    <div class="skills-container">
+                        <div class="skill">
+                            <img src="images/html-logo.png" alt="HTML">
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill">
+                            <img src="images/css-logo.png" alt="CSS">
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill">
+                            <img src="images/javascript-logo.png" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <h3>Back-End</h3>
+                    <div class="skills-container">
+                        <div class="skill">
+                            <img src="images/java-logo.png" alt="Java">
+                            <span>Java</span>
+                        </div>
+                        <div class="skill">
+                            <img src="images/sql-logo.png" alt="SQL">
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill">
+                            <img src="images/python-logo.png" alt="Python">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <h3>IDEs Utilizados</h3>
+                    <ul>
+                        <li>Eclipse</li>
+                        <li>Android Studio</li>
+                        <li>XCode</li>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                </section>
+
+                <section id="experience">
+                    <h2>Experiencia</h2>
+                    <div class="job">
+                        <h3>QA Tester - iboo</h3>
+                        <p>Septiembre 2023 - Febrero 2024</p>
+                        <ul>
+                            <li>Colaboré en el desarrollo del relaunch de la página web de Advance Affinity y el Grupo Pastas Gallo.</li>
+                            <li>Participé como QA tester en las aplicaciones FGC y Assistencia Sanitaria, tanto en Android como iOS.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="projects">
+                    <h2>Proyectos Personales</h2>
+                    <div class="project-container">
+                        <button id="prevBtn" class="carousel-btn">Anterior</button>
+                        <div class="card-deck" id="project-cards">
+                            <!-- Proyectos se cargarán aquí desde projects.json -->
+                        </div>
+                        <button id="nextBtn" class="carousel-btn">Siguiente</button>
+                    </div>
+                </section>
+
+                <section id="education">
+                    <h2>Educación</h2>
+                    <div class="education">
+                        <h3>Formación Profesional Superior en Desarrollo de Aplicaciones Multiplataforma - iFP</h3>
+                        <h3>Curso de Ampliación de Técnico Superior en Programación Java con Android y Apps iOS con Swift - Cepi-Base</h3>
+                    </div>
+                </section>
+
+                <section id="contact">
+                    <h2>Contacto</h2>
+                    <p>Correo electrónico: <span>alesaba@telefonica.net</span> <button onclick="copyToClipboard()">Copiar</button></p>
+                    <form id="contact-form">
+                        <div>
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="subject">Asunto:</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div>
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
